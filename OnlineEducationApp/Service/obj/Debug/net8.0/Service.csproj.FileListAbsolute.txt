@@ -1,0 +1,17 @@
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\bin\Debug\net8.0\Service.deps.json
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\bin\Debug\net8.0\Service.dll
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\bin\Debug\net8.0\Service.pdb
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\bin\Debug\net8.0\Domain.dll
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\bin\Debug\net8.0\Repository.dll
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\bin\Debug\net8.0\Domain.pdb
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\bin\Debug\net8.0\Repository.pdb
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.csproj.AssemblyReference.cache
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.AssemblyInfoInputs.cache
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.AssemblyInfo.cs
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.csproj.CoreCompileInputs.cache
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.csproj.Up2Date
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.dll
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\refint\Service.dll
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\Service.pdb
+D:\OneDrive - Personal\OneDrive\FINKI\6 semestar\Integrirani sistemi\Proekt\OnlineEducationApp\Service\obj\Debug\net8.0\ref\Service.dll
