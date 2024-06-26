@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj": {}
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj": {
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",

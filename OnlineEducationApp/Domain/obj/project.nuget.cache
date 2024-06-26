@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/JAh7Wgs+iVyFnlUOzNKBEoLScIOiPV7O4cTAZO62WFRnsukXVb3ei9rSRkvsyTWY5tiADD+lzWrGPR1OMhNPg==",
+  "dgSpecHash": "uvbmGq+uHwNnGpYDaewjszeXZviZV5Swo9D/wx7ru5IQie4BtYnncVTrDz+cgNmTZ2gNYoyGFiolmPcdqGZI8Q==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.6\\microsoft.aspnetcore.cryptography.internal.8.0.6.nupkg.sha512",
     "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.6\\microsoft.aspnetcore.cryptography.keyderivation.8.0.6.nupkg.sha512",

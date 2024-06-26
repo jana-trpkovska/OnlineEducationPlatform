@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Repository\\Repository.csproj": {}
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj": {
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,14 +70,14 @@
         }
       }
     },
-    "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Repository\\Repository.csproj": {
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\OneDrive - Personal\\OneDrive\\FINKI\\6 semestar\\Integrirani sistemi\\Proekt\\OnlineEducationApp\\Domain\\Domain.csproj"
+              "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj"
               }
             }
           }
@@ -122,6 +122,18 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [

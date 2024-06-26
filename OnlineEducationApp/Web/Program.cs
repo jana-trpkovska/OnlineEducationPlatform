@@ -2,6 +2,10 @@ using Domain.Identity;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using Microsoft.AspNetCore.Identity;
+using Repository.Implementation;
+using Repository.Interface;
+using Service.Implementation;
+using Service.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +18,13 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<OnlineEducationApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+builder.Services.AddTransient<IInstructorService, InstructorService>();
+builder.Services.AddTransient<ICourseService, CourseService>();
+builder.Services.AddTransient<IStudentService, StudentService>();
+
 
 var app = builder.Build();
 
