@@ -22,6 +22,21 @@ namespace Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CourseInstructor", b =>
+                {
+                    b.Property<Guid>("CourseInstructorsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseInstructorsId1")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("CourseInstructorsId", "CourseInstructorsId1");
+
+                    b.HasIndex("CourseInstructorsId1");
+
+                    b.ToTable("CourseInstructor");
+                });
+
             modelBuilder.Entity("Domain.DomainModels.Course", b =>
                 {
                     b.Property<Guid>("Id")
@@ -43,27 +58,6 @@ namespace Repository.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Courses");
-                });
-
-            modelBuilder.Entity("Domain.DomainModels.CourseInstructor", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CourseId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("InstructorId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
-
-                    b.HasIndex("InstructorId");
-
-                    b.ToTable("CourseInstructors");
                 });
 
             modelBuilder.Entity("Domain.DomainModels.Enrollment", b =>
@@ -340,19 +334,19 @@ namespace Repository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.DomainModels.CourseInstructor", b =>
+            modelBuilder.Entity("CourseInstructor", b =>
                 {
-                    b.HasOne("Domain.DomainModels.Course", "Course")
-                        .WithMany("CourseInstructors")
-                        .HasForeignKey("CourseId");
+                    b.HasOne("Domain.DomainModels.Course", null)
+                        .WithMany()
+                        .HasForeignKey("CourseInstructorsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Domain.DomainModels.Instructor", "Instructor")
-                        .WithMany("CourseInstructors")
-                        .HasForeignKey("InstructorId");
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Instructor");
+                    b.HasOne("Domain.DomainModels.Instructor", null)
+                        .WithMany()
+                        .HasForeignKey("CourseInstructorsId1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Domain.DomainModels.Enrollment", b =>
@@ -423,14 +417,7 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Domain.DomainModels.Course", b =>
                 {
-                    b.Navigation("CourseInstructors");
-
                     b.Navigation("Enrollments");
-                });
-
-            modelBuilder.Entity("Domain.DomainModels.Instructor", b =>
-                {
-                    b.Navigation("CourseInstructors");
                 });
 
             modelBuilder.Entity("Domain.DomainModels.Student", b =>

@@ -1,4 +1,5 @@
 ﻿using Domain.DomainModels;
+using Domain.DomainModels.Dto;
 using Repository.Interface;
 using Service.Interface;
 using System;
@@ -13,15 +14,58 @@ namespace Service.Implementation
     public class InstructorService : IInstructorService
     {
         private readonly IRepository<Instructor> instructorRepository;
+        private readonly IRepository<Course> courseRepository;
 
-        public InstructorService(IRepository<Instructor> instructorRepository)
+        public InstructorService(IRepository<Instructor> instructorRepository, IRepository<Course> courseRepository)
         {
             this.instructorRepository = instructorRepository;
+            this.courseRepository = courseRepository;
+
+        }
+
+        public bool AddCourse(CourseDto dto)
+        {
+            if (!ContainsCourse(dto.InstructorId, dto.CourseId))
+            {
+                var instructor = instructorRepository.Get(dto.InstructorId);
+                var course = courseRepository.Get(dto.CourseId);
+
+                instructor.CourseInstructors.Add(course);
+                instructorRepository.Update(instructor);
+
+                course.CourseInstructors.Add(instructor);
+                courseRepository.Update(course);
+
+                return true;
+            }
+            return false;
+
+        }
+
+        public bool ContainsCourse(Guid? instructorId, Guid? courseId)
+        {
+            var instructor = instructorRepository.Get(instructorId);
+            var course = courseRepository.Get(courseId);
+
+            return instructor.CourseInstructors.Contains(course) == true;
+        }
+
+        public void RemoveCourse(Guid courseId, Guid instructorId)
+        {
+            var instructor = instructorRepository.Get(instructorId);
+            var course = courseRepository.Get(courseId);
+
+            instructor.CourseInstructors.Remove(course);
+            instructorRepository.Update(instructor);
+
+            course.CourseInstructors.Remove(instructor);
+            courseRepository.Update(course);
+
         }
 
         public Instructor CreateNewInstructor(Instructor instructor)
         {
-            instructor.CourseInstructors = new List<CourseInstructor>();
+            instructor.CourseInstructors = new List<Course>();
             return instructorRepository.Insert(instructor);
         }
 

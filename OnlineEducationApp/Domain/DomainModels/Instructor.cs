@@ -11,6 +11,6 @@ namespace Domain.DomainModels
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? Email { get; set; }
-        public virtual ICollection<CourseInstructor>? CourseInstructors { get; set; }
+        public virtual ICollection<Course>? CourseInstructors { get; set; }
     }
 }

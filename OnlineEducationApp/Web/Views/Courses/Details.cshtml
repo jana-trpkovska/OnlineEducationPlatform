@@ -39,6 +39,10 @@
     </dl>
 </div>
 
+<div>
+    <a class="btn btn-success mb-2" asp-action="AddInstructor" asp-route-id="@Model.Id">Add Instructor</a>
+</div>
+
 
 <div>
     <h5>All Instructors for Course @Model.Title</h5>
@@ -52,6 +56,7 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -59,9 +64,12 @@
             {
                 <tr>
                     <td>@(i + 1)</td>
-                    <td>@item.Instructor.FirstName</td>
-                    <td>@item.Instructor.LastName</td>
-                    <td>@item.Instructor.Email</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.Email</td>
+                    <td>
+                        <a class="btn btn-danger" asp-action="RemoveInstructor" asp-route-courseId="@Model.Id" asp-route-instructorId="@item.Id">Remove Instructor</a>
+                    </td>
                 </tr>
             }
         </tbody>

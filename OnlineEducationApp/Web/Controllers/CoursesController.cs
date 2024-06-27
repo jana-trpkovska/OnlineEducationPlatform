@@ -10,16 +10,19 @@ using Repository;
 using Service.Interface;
 using Service.Implementation;
 using Microsoft.AspNetCore.Authorization;
+using Domain.DomainModels.Dto;
 
 namespace Web.Controllers
 {
     public class CoursesController : Controller
     {
         private readonly ICourseService courseService;
+        private readonly IInstructorService instructorService;
 
-        public CoursesController(ICourseService courseService)
+        public CoursesController(ICourseService courseService, IInstructorService instructorService)
         {
             this.courseService = courseService;
+            this.instructorService = instructorService;
         }
 
         // GET: Courses
@@ -136,6 +139,43 @@ namespace Web.Controllers
         private bool CourseExists(Guid id)
         {
             return courseService.GetCourseById(id) != null;
+        }
+
+        [Authorize]
+        public IActionResult AddInstructor(Guid id)
+        {
+            var course = courseService.GetCourseById(id);
+            var allInstructors = instructorService.GetAllInstructors();
+
+            var dto = new InstructorDto
+            {
+                CourseId = id,
+                AllInstructors = allInstructors
+            };
+            return View(dto);
+        }
+
+        [HttpPost, ActionName("AddInstructor")]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddInstructor(InstructorDto dto)
+        {
+            if (courseService.AddInstructor(dto) == true)
+            {
+                return RedirectToAction(nameof(Details), new { id = dto.CourseId });
+            }
+            return RedirectToAction(nameof(InstructorAlreadyAdded));
+        }
+
+        public IActionResult InstructorAlreadyAdded()
+        {
+            return View();
+        }
+
+        public IActionResult RemoveInstructor(Guid courseId, Guid instructorId)
+        {
+            courseService.RemoveInstructor(courseId, instructorId);
+
+            return RedirectToAction(nameof(Details), new { id = courseId });
         }
     }
 }

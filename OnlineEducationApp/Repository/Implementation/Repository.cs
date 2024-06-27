@@ -27,7 +27,6 @@ namespace Repository.Implementation
             {
                 return entities
                     .Include("CourseInstructors")
-                    .Include("CourseInstructors.Instructor")
                     .Include("Enrollments")
                     .Include("Enrollments.Student")
                     .AsEnumerable();
@@ -43,7 +42,6 @@ namespace Repository.Implementation
             {
                 return entities
                     .Include("CourseInstructors")
-                    .Include("CourseInstructors.Course")
                     .AsEnumerable();
             }
             else if (typeof(T).IsAssignableFrom(typeof(Student)))
@@ -65,7 +63,6 @@ namespace Repository.Implementation
             {
                 return entities
                     .Include("CourseInstructors")
-                    .Include("CourseInstructors.Instructor")
                     .Include("Enrollments")
                     .Include("Enrollments.Student")
                     .First(s => s.Id == id);
@@ -81,7 +78,6 @@ namespace Repository.Implementation
             {
                 return entities
                     .Include("CourseInstructors")
-                    .Include("CourseInstructors.Course")
                     .First(s => s.Id == id);
             }
             else if (typeof(T).IsAssignableFrom(typeof(Student)))

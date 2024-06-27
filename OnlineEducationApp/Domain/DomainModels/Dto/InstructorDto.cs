@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.DomainModels
+namespace Domain.DomainModels.Dto
 {
-    public class CourseInstructor : BaseEntity
+    public class InstructorDto
     {
+        public List<Instructor>? AllInstructors { get; set; }
         public Guid? CourseId { get; set; }
         public Guid? InstructorId { get; set; }
-        public Course? Course { get; set; }
-        public Instructor? Instructor { get; set; }
     }
 }

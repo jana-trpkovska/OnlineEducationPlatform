@@ -9,16 +9,19 @@ using Domain.DomainModels;
 using Repository;
 using Service.Interface;
 using Microsoft.AspNetCore.Authorization;
+using Domain.DomainModels.Dto;
 
 namespace Web.Controllers
 {
     public class InstructorsController : Controller
     {
         private readonly IInstructorService instructorService;
+        private readonly ICourseService courseService;
 
-        public InstructorsController(IInstructorService instructorService)
+        public InstructorsController(IInstructorService instructorService, ICourseService courseService)
         {
             this.instructorService = instructorService;
+            this.courseService = courseService;
         }
 
 
@@ -136,6 +139,43 @@ namespace Web.Controllers
         private bool InstructorExists(Guid id)
         {
             return instructorService.GetInstructorById(id) != null;
+        }
+
+        [Authorize]
+        public IActionResult AddCourse(Guid id)
+        {
+            var instructor = instructorService.GetInstructorById(id);
+            var allCourses = courseService.GetAllCourses();
+
+            var dto = new CourseDto
+            {
+                InstructorId = id,
+                AllCourses = allCourses
+            };
+            return View(dto);
+        }
+
+        [HttpPost, ActionName("AddCourse")]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddCourse(CourseDto dto)
+        {
+            if (instructorService.AddCourse(dto) == true)
+            {
+                return RedirectToAction(nameof(Details), new { id = dto.InstructorId });
+            }
+            return RedirectToAction(nameof(CourseAlreadyAdded));
+        }
+
+        public IActionResult CourseAlreadyAdded()
+        {
+            return View();
+        }
+
+        public IActionResult RemoveCourse(Guid courseId, Guid instructorId)
+        {
+            instructorService.RemoveCourse(courseId, instructorId);
+
+            return RedirectToAction(nameof(Details), new { id = instructorId });
         }
 
     }

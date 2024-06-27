@@ -50,6 +50,7 @@
                 <th>Description</th>
                 <th>Duration</th>
                 <th>Level</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -57,10 +58,13 @@
             {
                 <tr>
                     <td>@(i + 1)</td>
-                    <td>@item.Course.Title</td>
-                    <td>@item.Course.Description</td>
-                    <td>@item.Course.Duration</td>
-                    <td>@item.Course.Level</td>
+                    <td>@item.Title</td>
+                    <td>@item.Description</td>
+                    <td>@item.Duration</td>
+                    <td>@item.Level</td>
+                    <td>
+                        <a class="btn btn-danger" asp-action="RemoveCourse" asp-route-courseId="@item.Id" asp-route-instructorId="@Model.Id">Remove Course</a>
+                    </td>
                 </tr>
             }
         </tbody>

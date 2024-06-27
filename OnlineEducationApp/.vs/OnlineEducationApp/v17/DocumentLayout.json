@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\web\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\web\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\web\\views\\instructors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\views\\instructors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\web\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,40 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Courses\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Courses\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Courses\\Index.cshtml",
-              "RelativeToolTip": "Web\\Views\\Courses\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-26T17:59:53.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Students\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Students\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Students\\Index.cshtml",
-              "RelativeToolTip": "Web\\Views\\Students\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-26T17:59:47.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Instructors\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Instructors\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Instructors\\Index.cshtml",
-              "RelativeToolTip": "Web\\Views\\Instructors\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-26T17:56:07.9Z",
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "Web\\Controllers\\CoursesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwBcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T13:47:21.254Z",
               "EditorCaption": ""
             }
           ]
