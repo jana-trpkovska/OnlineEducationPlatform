@@ -1,4 +1,5 @@
 ﻿using Domain.DomainModels;
+using Domain.DomainModels.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,8 @@ namespace Service.Interface
         public Student CreateNewStudent(Student student);
         public Student UpdateStudent(Student student);
         public Student DeleteStudent(Guid id);
+        public bool AddEnrollment(EnrollmentDto dto);
+        public void RemoveEnrollment(Guid studentId, Guid enrollmentId);
+
     }
 }

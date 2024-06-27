@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    int i = 0;
 }
 
 <h1>Details</h1>
@@ -37,6 +38,50 @@
         </dd>
     </dl>
 </div>
+
+
+<div>
+    <a class="btn btn-success mb-2" asp-action="AddEnrollment" asp-route-id="@Model.Id">Enroll</a>
+</div>
+
+<div>
+    <h5>All Courses for Student @Model.FirstName @Model.LastName</h5>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Description</th>
+                <th>Duration</th>
+                <th>Level</th>
+                <th>Date of enrollment</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Enrollments)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@item.Course.Title</td>
+                    <td>@item.Course.Description</td>
+                    <td>@item.Course.Duration</td>
+                    <td>@item.Course.Level</td>
+                    <td>@item.DateOfCourseEnrollment</td>
+                    <td>
+                        <a class="btn btn-danger" asp-action="RemoveEnrollment" asp-route-studentId="@Model.Id" asp-route-enrollmentId="@item.Id">Remove Course</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
 <div>
     <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a class="btn btn-info" asp-action="Index">Back to List</a>

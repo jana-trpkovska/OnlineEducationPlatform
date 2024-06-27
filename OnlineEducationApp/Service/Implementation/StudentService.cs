@@ -1,4 +1,5 @@
 ﻿using Domain.DomainModels;
+using Domain.DomainModels.Dto;
 using Repository.Interface;
 using Service.Interface;
 using System;
@@ -12,10 +13,75 @@ namespace Service.Implementation
     public class StudentService : IStudentService
     {
         private readonly IRepository<Student> studentRepository;
+        private readonly IRepository<Course> courseRepository;
+        private readonly IRepository<Enrollment> enrollmentRepository;
 
-        public StudentService(IRepository<Student> studentRepository)
+
+        public StudentService(IRepository<Student> studentRepository, IRepository<Course> courseRepository, IRepository<Enrollment> enrollmentRepository)
         {
             this.studentRepository = studentRepository;
+            this.courseRepository = courseRepository;
+            this.enrollmentRepository = enrollmentRepository;
+
+        }
+
+        public bool AddEnrollment(EnrollmentDto dto)
+        {
+            if (!ContainsEnrollment(dto.StudentId, dto.CourseId))
+            {
+                var student = studentRepository.Get(dto.StudentId);
+                var course = courseRepository.Get(dto.CourseId);
+
+                var enrollment = new Enrollment
+                {
+                    CourseId = dto.CourseId,
+                    StudentId = dto.StudentId,
+                    DateOfCourseEnrollment = dto.DateOfCourseEnrollment,
+                    Course = course,
+                    Student = student
+                };
+
+                student.Enrollments.Add(enrollment);
+                studentRepository.Update(student);
+
+                course.Enrollments.Add(enrollment);
+                courseRepository.Update(course);
+
+                return true;
+            }
+            return false;
+        }
+
+        public bool ContainsEnrollment(Guid? studentId, Guid? courseId)
+        {
+            var student = studentRepository.Get(studentId);
+            var course = courseRepository.Get(courseId);
+
+            bool contains = false;
+
+            foreach (var e in student.Enrollments)
+            {
+                if (e.Course.Id == courseId)
+                {
+                    contains = true;
+                    break;
+                }
+            }
+
+            return contains;
+        }
+
+        public void RemoveEnrollment(Guid studentId, Guid enrollmentId)
+        {
+            var student = studentRepository.Get(studentId);
+            var enrollment = enrollmentRepository.Get(enrollmentId);
+            var course = courseRepository.Get(enrollment.CourseId);
+
+            student.Enrollments.Remove(enrollment);
+            studentRepository.Update(student);
+
+            course.Enrollments.Remove(enrollment);
+            courseRepository.Update(course);
         }
 
         public Student CreateNewStudent(Student student)

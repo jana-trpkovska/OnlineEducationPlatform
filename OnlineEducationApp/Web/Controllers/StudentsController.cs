@@ -9,16 +9,21 @@ using Domain.DomainModels;
 using Repository;
 using Service.Interface;
 using Service.Implementation;
+using Domain.DomainModels.Dto;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Web.Controllers
 {
     public class StudentsController : Controller
     {
         private readonly IStudentService studentService;
+        private readonly ICourseService courseService;
 
-        public StudentsController(IStudentService studentService)
+        public StudentsController(IStudentService studentService, ICourseService courseService)
         {
             this.studentService = studentService;
+            this.courseService = courseService;
+
         }
 
         // GET: Students
@@ -132,6 +137,43 @@ namespace Web.Controllers
         private bool StudentExists(Guid id)
         {
             return studentService.GetStudentById(id) != null;
+        }
+
+        [Authorize]
+        public IActionResult AddEnrollment(Guid id)
+        {
+            var student = studentService.GetStudentById(id);
+            var allCourses = courseService.GetAllCourses();
+
+            var dto = new EnrollmentDto
+            {
+                StudentId = id,
+                AllCourses = allCourses
+            };
+            return View(dto);
+        }
+
+        [HttpPost, ActionName("AddEnrollment")]
+        [ValidateAntiForgeryToken]
+        public IActionResult AddEnrollment(EnrollmentDto dto)
+        {
+            if (studentService.AddEnrollment(dto) == true)
+            {
+                return RedirectToAction(nameof(Details), new { id = dto.StudentId });
+            }
+            return RedirectToAction(nameof(EnrollmentAlreadyAdded));
+        }
+
+        public IActionResult EnrollmentAlreadyAdded()
+        {
+            return View();
+        }
+
+        public IActionResult RemoveEnrollment(Guid studentId, Guid enrollmentId)
+        {
+            studentService.RemoveEnrollment(studentId, enrollmentId);
+
+            return RedirectToAction(nameof(Details), new { id = studentId });
         }
     }
 }
