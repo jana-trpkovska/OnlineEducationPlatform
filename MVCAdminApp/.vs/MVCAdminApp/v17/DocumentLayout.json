@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|c:\\users\\jana trpkovska\\desktop\\mvcadminapp\\mvcadminapp\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|solutionrelative:mvcadminapp\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|c:\\users\\jana trpkovska\\desktop\\mvcadminapp\\mvcadminapp\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|solutionrelative:mvcadminapp\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|c:\\users\\jana trpkovska\\desktop\\mvcadminapp\\mvcadminapp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|solutionrelative:mvcadminapp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\Views\\Students\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCAdminApp\\Views\\Students\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\Views\\Students\\Details.cshtml",
+              "RelativeToolTip": "MVCAdminApp\\Views\\Students\\Details.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-28T17:36:50.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCAdminApp\\Views\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "MVCAdminApp\\Views\\Students\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-28T17:21:22.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "MVCAdminApp\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "MVCAdminApp\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T17:15:17.341Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

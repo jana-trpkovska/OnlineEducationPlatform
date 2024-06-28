@@ -10,10 +10,12 @@ namespace Web.Controllers.API
     public class AdminController : ControllerBase
     {
         private readonly IEnrollmentService enrollmentService;
+        private readonly IStudentService studentService;
 
-        public AdminController(IEnrollmentService enrollmentService)
+        public AdminController(IEnrollmentService enrollmentService, IStudentService studentService)
         {
             this.enrollmentService = enrollmentService;
+            this.studentService = studentService;
         }
 
         [HttpGet("[action]")]
@@ -26,6 +28,18 @@ namespace Web.Controllers.API
         public Enrollment GetDetailsForEnrollment(BaseEntity model)
         {
             return enrollmentService.GetDetailsForEnrollment(model);
+        }
+        
+        [HttpGet("[action]")]
+        public List<Student> GetAllStudents()
+        {
+            return studentService.GetAllStudents();
+        }
+
+        [HttpPost("[action]")]
+        public Student GetDetailsForStudent(BaseEntity model)
+        {
+            return studentService.GetStudentById(model.Id);
         }
 
     }
