@@ -17,13 +17,17 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<OnlineEducationApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 builder.Services.AddTransient<IInstructorService, InstructorService>();
 builder.Services.AddTransient<ICourseService, CourseService>();
 builder.Services.AddTransient<IStudentService, StudentService>();
+builder.Services.AddTransient<IEnrollmentService, EnrollmentService>();
+
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
 
 
 var app = builder.Build();

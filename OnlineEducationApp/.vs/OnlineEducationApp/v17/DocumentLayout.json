@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\web\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9DC374-777A-46DB-A786-90B4F4FB054A}|Service\\Service.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\service\\implementation\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9DC374-777A-46DB-A786-90B4F4FB054A}|Service\\Service.csproj|solutionrelative:service\\implementation\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC9DC374-777A-46DB-A786-90B4F4FB054A}|Service\\Service.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\service\\interface\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC9DC374-777A-46DB-A786-90B4F4FB054A}|Service\\Service.csproj|solutionrelative:service\\interface\\ienrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,15 +46,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEnrollmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Interface\\IEnrollmentService.cs",
+              "RelativeDocumentMoniker": "Service\\Interface\\IEnrollmentService.cs",
+              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Interface\\IEnrollmentService.cs",
+              "RelativeToolTip": "Service\\Interface\\IEnrollmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T16:37:21.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Students\\Details.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Students\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Students\\Details.cshtml",
-              "RelativeToolTip": "Web\\Views\\Students\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-27T15:04:50.118Z",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\API\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
+              "RelativeToolTip": "Web\\Controllers\\API\\AdminController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T16:36:08.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnrollmentService.cs",
+              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Implementation\\EnrollmentService.cs",
+              "RelativeDocumentMoniker": "Service\\Implementation\\EnrollmentService.cs",
+              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Implementation\\EnrollmentService.cs",
+              "RelativeToolTip": "Service\\Implementation\\EnrollmentService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T16:28:17.796Z",
               "EditorCaption": ""
             }
           ]

@@ -82,6 +82,9 @@ namespace Service.Implementation
 
             course.Enrollments.Remove(enrollment);
             courseRepository.Update(course);
+
+            enrollmentRepository.Delete(enrollment);
+
         }
 
         public Student CreateNewStudent(Student student)

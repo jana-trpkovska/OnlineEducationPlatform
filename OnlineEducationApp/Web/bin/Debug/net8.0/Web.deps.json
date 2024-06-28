@@ -12,8 +12,9 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.6",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.6",
           "Microsoft.AspNetCore.Identity.UI": "8.0.6",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "8.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
-          "Microsoft.EntityFrameworkCore.Sqlite": "8.0.4",
+          "Microsoft.EntityFrameworkCore.Sqlite": "8.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.6",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.2",
           "Repository": "1.0.0",
@@ -651,6 +652,31 @@
           }
         }
       },
+      "Microsoft.AspNetCore.JsonPatch/8.0.6": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "assemblyVersion": "8.0.6.0",
+            "fileVersion": "8.0.624.26909"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.6": {
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "8.0.6",
+          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "assemblyVersion": "8.0.6.0",
+            "fileVersion": "8.0.624.26909"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.24": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -1113,7 +1139,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {},
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.SqlClient/5.1.5": {
         "dependencies": {
           "Azure.Identity": "1.10.3",
@@ -1175,14 +1201,14 @@
           }
         }
       },
-      "Microsoft.Data.Sqlite.Core/8.0.4": {
+      "Microsoft.Data.Sqlite.Core/8.0.6": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.1.6"
         },
         "runtime": {
           "lib/net8.0/Microsoft.Data.Sqlite.dll": {
-            "assemblyVersion": "8.0.4.0",
-            "fileVersion": "8.0.424.16902"
+            "assemblyVersion": "8.0.6.0",
+            "fileVersion": "8.0.624.26904"
           }
         }
       },
@@ -1260,22 +1286,22 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite/8.0.4": {
+      "Microsoft.EntityFrameworkCore.Sqlite/8.0.6": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "8.0.4",
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "8.0.6",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.6"
         }
       },
-      "Microsoft.EntityFrameworkCore.Sqlite.Core/8.0.4": {
+      "Microsoft.EntityFrameworkCore.Sqlite.Core/8.0.6": {
         "dependencies": {
-          "Microsoft.Data.Sqlite.Core": "8.0.4",
+          "Microsoft.Data.Sqlite.Core": "8.0.6",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.6",
           "Microsoft.Extensions.DependencyModel": "8.0.0"
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
-            "assemblyVersion": "8.0.4.0",
-            "fileVersion": "8.0.424.16902"
+            "assemblyVersion": "8.0.6.0",
+            "fileVersion": "8.0.624.26904"
           }
         }
       },
@@ -1515,7 +1541,7 @@
       },
       "Microsoft.IdentityModel.Tokens/6.35.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.IdentityModel.Logging": "6.35.0",
           "System.Security.Cryptography.Cng": "5.0.0"
         },
@@ -1665,6 +1691,17 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.2.22727"
           }
         }
       },
@@ -2612,6 +2649,20 @@
       "path": "microsoft.aspnetcore.identity.ui/8.0.6",
       "hashPath": "microsoft.aspnetcore.identity.ui.8.0.6.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.JsonPatch/8.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f23867xv+b5Cps3G2WDqjx3JjluLdR/TxfVI9sqk3d1ceQgOSD1WrqrQA66frdd5eQq+uqTGRReq1OQhQqodWQ==",
+      "path": "microsoft.aspnetcore.jsonpatch/8.0.6",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.8.0.6.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/8.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AOoi7cmh2yTVHMNMRYEfAj26NCOur9pd70GSXaDNJvVtD7e/I9UddIkwnj7HAWKtUn2EUOzSKCpt/RZllYiO5w==",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/8.0.6",
+      "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.8.0.6.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",
       "serviceable": true,
@@ -2717,12 +2768,12 @@
       "path": "microsoft.codeanalysis.workspaces.common/4.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.5.0": {
+    "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Data.SqlClient/5.1.5": {
       "type": "package",
@@ -2738,12 +2789,12 @@
       "path": "microsoft.data.sqlclient.sni.runtime/5.1.1",
       "hashPath": "microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512"
     },
-    "Microsoft.Data.Sqlite.Core/8.0.4": {
+    "Microsoft.Data.Sqlite.Core/8.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-x5FE5m1h31UIDEk0j3r38HtYvsa0fxd5jXzvE/SARI7LecXt/jm4z2SUl6TEoJGQOo9Ow2wg3a0MU2E1TVVAdA==",
-      "path": "microsoft.data.sqlite.core/8.0.4",
-      "hashPath": "microsoft.data.sqlite.core.8.0.4.nupkg.sha512"
+      "sha512": "sha512-umhZ0ZF2RI81rGFTnYmCxI+Euj4Aqe/6Y4+8CxN9OVJNGDNIqB5laJ3wxQTU8zXCcm2k9F7FL+/6RVoOT4z1Fw==",
+      "path": "microsoft.data.sqlite.core/8.0.6",
+      "hashPath": "microsoft.data.sqlite.core.8.0.6.nupkg.sha512"
     },
     "Microsoft.DiaSymReader/2.0.0": {
       "type": "package",
@@ -2794,19 +2845,19 @@
       "path": "microsoft.entityframeworkcore.relational/8.0.6",
       "hashPath": "microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Sqlite/8.0.4": {
+    "Microsoft.EntityFrameworkCore.Sqlite/8.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7y0Z7y1SwBNswxlNY9zduqk5I0+pWWzYIFhtJtvo55RcfomIQDmOODG/s5+iOxv0JoVHjFOgAc8AMI3DwAaoig==",
-      "path": "microsoft.entityframeworkcore.sqlite/8.0.4",
-      "hashPath": "microsoft.entityframeworkcore.sqlite.8.0.4.nupkg.sha512"
+      "sha512": "sha512-nC4cZN4zReTb22qd9WDU0eDmlXvkyf2g2pqQ3VIHJbkpJcdWSY/PDgwGpbpShsVcAjXbkjGiUcv9aGwa61xQPw==",
+      "path": "microsoft.entityframeworkcore.sqlite/8.0.6",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.8.0.6.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Sqlite.Core/8.0.4": {
+    "Microsoft.EntityFrameworkCore.Sqlite.Core/8.0.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4XCrL6vdFQSXZY6b89cXvjYNvTKP5azMvgacI2XE+B0D7Lg3zYSjmfLZYWfR3j3izx5X8xCTkHZnaRHHfHcv+w==",
-      "path": "microsoft.entityframeworkcore.sqlite.core/8.0.4",
-      "hashPath": "microsoft.entityframeworkcore.sqlite.core.8.0.4.nupkg.sha512"
+      "sha512": "sha512-87xfPtqSouxWWdynYZv/rubd0rOUeiN9+XeoMWQzpZm/5svH1TuvzFODGIY0zKuXS18NiOFyHl9N6///eaEs/Q==",
+      "path": "microsoft.entityframeworkcore.sqlite.core/8.0.6",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.core.8.0.6.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.SqlServer/8.0.6": {
       "type": "package",
@@ -3108,6 +3159,13 @@
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
     "NuGet.Common/6.9.1": {
       "type": "package",

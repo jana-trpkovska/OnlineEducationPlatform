@@ -585,3 +585,6 @@ C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\o
 C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\obj\Debug\net8.0\Web.pdb
 C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
 C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\obj\Debug\net8.0\ref\Web.dll
+C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
