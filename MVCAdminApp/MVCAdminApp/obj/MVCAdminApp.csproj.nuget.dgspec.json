@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {}
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
+        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
         "projectName": "MVCAdminApp",
-        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
+        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
         "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\MVCAdminApp\\MVCAdminApp\\obj\\",
+        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.2, )"
+            },
             "GemBox.Document": {
               "target": "Package",
               "version": "[35.0.1784, )"
