@@ -14,10 +14,16 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Index)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.FirstName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProfilePicture)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)
@@ -33,10 +39,16 @@
         {
             <tr>
                 <td>
+                    @Html.DisplayFor(modelItem => item.Index)
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.FirstName)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProfilePicture)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Email)

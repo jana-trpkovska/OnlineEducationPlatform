@@ -23,3 +23,16 @@ C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Domai
 C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\refint\Domain.dll
 C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.pdb
 C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Domain\obj\Debug\net8.0\ref\Domain.dll

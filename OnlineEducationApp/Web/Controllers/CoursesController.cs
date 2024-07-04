@@ -11,18 +11,19 @@ using Service.Interface;
 using Service.Implementation;
 using Microsoft.AspNetCore.Authorization;
 using Domain.DomainModels.Dto;
+using System.Security.Claims;
 
 namespace Web.Controllers
 {
     public class CoursesController : Controller
     {
         private readonly ICourseService courseService;
-        private readonly IInstructorService instructorService;
+        private readonly ICourseInstructorService courseInstructorService;
 
-        public CoursesController(ICourseService courseService, IInstructorService instructorService)
+        public CoursesController(ICourseService courseService, ICourseInstructorService courseInstructorService)
         {
             this.courseService = courseService;
-            this.instructorService = instructorService;
+            this.courseInstructorService = courseInstructorService;
         }
 
         // GET: Courses
@@ -32,6 +33,7 @@ namespace Web.Controllers
         }
 
         // GET: Courses/Details/5
+        [Authorize]
         public IActionResult Details(Guid? id)
         {
             if (id == null)
@@ -45,6 +47,9 @@ namespace Web.Controllers
             {
                 return NotFound();
             }
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            ViewBag.AlreadyInstructing = courseInstructorService.CourseInstructorExists(id, userId);
 
             return View(course);
         }
@@ -61,7 +66,7 @@ namespace Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Title,Description,Duration,Level,Id")] Course course)
+        public IActionResult Create([Bind("Title,Description,Duration,Level,Id,CourseImage")] Course course)
         {
             if (ModelState.IsValid)
             {
@@ -93,7 +98,7 @@ namespace Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("Title,Description,Duration,Level,Id")] Course course)
+        public IActionResult Edit(Guid id, [Bind("Title,Description,Duration,Level,Id,CourseImage")] Course course)
         {
             if (id != course.Id)
             {
@@ -144,36 +149,21 @@ namespace Web.Controllers
         [Authorize]
         public IActionResult AddInstructor(Guid id)
         {
-            var course = courseService.GetCourseById(id);
-            var allInstructors = instructorService.GetAllInstructors();
-
-            var dto = new InstructorDto
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var courseInstructor = new CourseInstructor
             {
+                Id = Guid.NewGuid(),
                 CourseId = id,
-                AllInstructors = allInstructors
+                InstructorId = userId
             };
-            return View(dto);
+            courseInstructorService.CreateNewCourseInstructor(courseInstructor);
+            return RedirectToAction("Details", new {id=id});
         }
 
-        [HttpPost, ActionName("AddInstructor")]
-        [ValidateAntiForgeryToken]
-        public IActionResult AddInstructor(InstructorDto dto)
+        public IActionResult RemoveInstructor(Guid? courseId)
         {
-            if (courseService.AddInstructor(dto) == true)
-            {
-                return RedirectToAction(nameof(Details), new { id = dto.CourseId });
-            }
-            return RedirectToAction(nameof(InstructorAlreadyAdded));
-        }
-
-        public IActionResult InstructorAlreadyAdded()
-        {
-            return View();
-        }
-
-        public IActionResult RemoveInstructor(Guid courseId, Guid instructorId)
-        {
-            courseService.RemoveInstructor(courseId, instructorId);
+            string? instructorId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            courseInstructorService.DeleteCourseInstructor(courseId, instructorId);
 
             return RedirectToAction(nameof(Details), new { id = courseId });
         }

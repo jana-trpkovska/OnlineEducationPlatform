@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj": {}
+    "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
+    "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,21 +67,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {
+    "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,14 +89,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj"
+              "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj"
               }
             }
           }
@@ -152,21 +154,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj": {
+    "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\obj\\",
+        "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,17 +176,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj"
+              "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj"
+              "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj"
               }
             }
           }
@@ -219,21 +222,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj": {
+    "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj",
+        "projectUniqueName": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj",
         "projectName": "Web",
-        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj",
-        "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\obj\\",
+        "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -241,20 +244,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj"
+              "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj"
+              "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Repository\\Repository.csproj"
               },
-              "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj"
+              "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Service.csproj"
               }
             }
           }
@@ -328,7 +332,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

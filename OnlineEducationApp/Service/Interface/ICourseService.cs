@@ -15,7 +15,5 @@ namespace Service.Interface
         public Course CreateNewCourse(Course course);
         public Course UpdateCourse(Course course);
         public Course DeleteCourse(Guid id);
-        public bool AddInstructor(InstructorDto dto);
-        public void RemoveInstructor(Guid courseId, Guid instructorId);
     }
 }

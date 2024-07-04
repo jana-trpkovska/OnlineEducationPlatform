@@ -22,26 +22,14 @@ namespace Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CourseInstructor", b =>
-                {
-                    b.Property<Guid>("CourseInstructorsId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CourseInstructorsId1")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("CourseInstructorsId", "CourseInstructorsId1");
-
-                    b.HasIndex("CourseInstructorsId1");
-
-                    b.ToTable("CourseInstructor");
-                });
-
             modelBuilder.Entity("Domain.DomainModels.Course", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("CourseImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -58,6 +46,27 @@ namespace Repository.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Courses");
+                });
+
+            modelBuilder.Entity("Domain.DomainModels.CourseInstructor", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("InstructorId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("CourseInstructors");
                 });
 
             modelBuilder.Entity("Domain.DomainModels.Enrollment", b =>
@@ -84,26 +93,6 @@ namespace Repository.Migrations
                     b.ToTable("Enrollments");
                 });
 
-            modelBuilder.Entity("Domain.DomainModels.Instructor", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Instructors");
-                });
-
             modelBuilder.Entity("Domain.DomainModels.Student", b =>
                 {
                     b.Property<Guid>("Id")
@@ -119,7 +108,13 @@ namespace Repository.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Index")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProfilePicture")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -127,7 +122,7 @@ namespace Repository.Migrations
                     b.ToTable("Students");
                 });
 
-            modelBuilder.Entity("Domain.Identity.OnlineEducationApplicationUser", b =>
+            modelBuilder.Entity("Domain.Identity.InstructorUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -334,19 +329,19 @@ namespace Repository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("CourseInstructor", b =>
+            modelBuilder.Entity("Domain.DomainModels.CourseInstructor", b =>
                 {
-                    b.HasOne("Domain.DomainModels.Course", null)
-                        .WithMany()
-                        .HasForeignKey("CourseInstructorsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Domain.DomainModels.Course", "Course")
+                        .WithMany("CourseInstructors")
+                        .HasForeignKey("CourseId");
 
-                    b.HasOne("Domain.DomainModels.Instructor", null)
-                        .WithMany()
-                        .HasForeignKey("CourseInstructorsId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Domain.Identity.InstructorUser", "Instructor")
+                        .WithMany("Courses")
+                        .HasForeignKey("InstructorId");
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Instructor");
                 });
 
             modelBuilder.Entity("Domain.DomainModels.Enrollment", b =>
@@ -375,7 +370,7 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Domain.Identity.OnlineEducationApplicationUser", null)
+                    b.HasOne("Domain.Identity.InstructorUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -384,7 +379,7 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Domain.Identity.OnlineEducationApplicationUser", null)
+                    b.HasOne("Domain.Identity.InstructorUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -399,7 +394,7 @@ namespace Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Identity.OnlineEducationApplicationUser", null)
+                    b.HasOne("Domain.Identity.InstructorUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -408,7 +403,7 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Domain.Identity.OnlineEducationApplicationUser", null)
+                    b.HasOne("Domain.Identity.InstructorUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -417,12 +412,19 @@ namespace Repository.Migrations
 
             modelBuilder.Entity("Domain.DomainModels.Course", b =>
                 {
+                    b.Navigation("CourseInstructors");
+
                     b.Navigation("Enrollments");
                 });
 
             modelBuilder.Entity("Domain.DomainModels.Student", b =>
                 {
                     b.Navigation("Enrollments");
+                });
+
+            modelBuilder.Entity("Domain.Identity.InstructorUser", b =>
+                {
+                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

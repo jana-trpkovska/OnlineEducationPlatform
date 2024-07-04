@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using Domain.DomainModels;
 using Domain.Identity;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
@@ -24,17 +25,17 @@ namespace Web.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<OnlineEducationApplicationUser> _signInManager;
-        private readonly UserManager<OnlineEducationApplicationUser> _userManager;
-        private readonly IUserStore<OnlineEducationApplicationUser> _userStore;
-        private readonly IUserEmailStore<OnlineEducationApplicationUser> _emailStore;
+        private readonly SignInManager<InstructorUser> _signInManager;
+        private readonly UserManager<InstructorUser> _userManager;
+        private readonly IUserStore<InstructorUser> _userStore;
+        private readonly IUserEmailStore<InstructorUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<OnlineEducationApplicationUser> userManager,
-            IUserStore<OnlineEducationApplicationUser> userStore,
-            SignInManager<OnlineEducationApplicationUser> signInManager,
+            UserManager<InstructorUser> userManager,
+            IUserStore<InstructorUser> userStore,
+            SignInManager<InstructorUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
@@ -127,6 +128,12 @@ namespace Web.Areas.Identity.Pages.Account
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+
+                user.FirstName = Input.FirstName;
+                user.LastName = Input.LastName;
+                user.Address = Input.Address;
+                user.Courses = new List<CourseInstructor>();
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
@@ -165,27 +172,27 @@ namespace Web.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private OnlineEducationApplicationUser CreateUser()
+        private InstructorUser CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<OnlineEducationApplicationUser>();
+                return Activator.CreateInstance<InstructorUser>();
             }
             catch
             {
-                throw new InvalidOperationException($"Can't create an instance of '{nameof(OnlineEducationApplicationUser)}'. " +
-                    $"Ensure that '{nameof(OnlineEducationApplicationUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
+                throw new InvalidOperationException($"Can't create an instance of '{nameof(InstructorUser)}'. " +
+                    $"Ensure that '{nameof(InstructorUser)}' is not an abstract class and has a parameterless constructor, or alternatively " +
                     $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
             }
         }
 
-        private IUserEmailStore<OnlineEducationApplicationUser> GetEmailStore()
+        private IUserEmailStore<InstructorUser> GetEmailStore()
         {
             if (!_userManager.SupportsUserEmail)
             {
                 throw new NotSupportedException("The default UI requires a user store with email support.");
             }
-            return (IUserEmailStore<OnlineEducationApplicationUser>)_userStore;
+            return (IUserEmailStore<InstructorUser>)_userStore;
         }
     }
 }

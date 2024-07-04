@@ -1,4 +1,4 @@
-﻿@model Domain.DomainModels.Student
+﻿    @model Domain.DomainModels.Student
 
 @{
     ViewData["Title"] = "Details";
@@ -13,6 +13,12 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Index)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Index)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
         <dd class="col-sm-10">
@@ -23,6 +29,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProfilePicture)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProfilePicture)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Email)

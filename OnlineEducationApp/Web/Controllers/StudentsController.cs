@@ -61,7 +61,7 @@ namespace Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("FirstName,LastName,Email,DateEnrolled,Id")] Student student)
+        public IActionResult Create([Bind("FirstName,LastName,Email,DateEnrolled,Id,Index,ProfilePicture")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -92,7 +92,7 @@ namespace Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Guid id, [Bind("FirstName,LastName,Email,DateEnrolled,Id")] Student student)
+        public IActionResult Edit(Guid id, [Bind("FirstName,LastName,Email,DateEnrolled,Id,Index,ProfilePicture")] Student student)
         {
             if (id != student.Id)
             {

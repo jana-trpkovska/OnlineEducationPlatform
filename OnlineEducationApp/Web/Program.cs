@@ -15,12 +15,12 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<OnlineEducationApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<InstructorUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
-builder.Services.AddTransient<IInstructorService, InstructorService>();
+builder.Services.AddTransient<ICourseInstructorService, CourseInstructorService>();
 builder.Services.AddTransient<ICourseService, CourseService>();
 builder.Services.AddTransient<IStudentService, StudentService>();
 builder.Services.AddTransient<IEnrollmentService, EnrollmentService>();

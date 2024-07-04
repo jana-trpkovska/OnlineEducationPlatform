@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Domain.DomainModels;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Identity
 {
-    public class OnlineEducationApplicationUser : IdentityUser
+    public class InstructorUser : IdentityUser
     {
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? Address { get; set; }
+        public virtual ICollection<CourseInstructor>? Courses { get; set; }
     }
 }

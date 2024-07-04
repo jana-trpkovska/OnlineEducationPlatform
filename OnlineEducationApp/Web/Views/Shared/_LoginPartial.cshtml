@@ -1,7 +1,7 @@
 ﻿@using Domain.Identity
 @using Microsoft.AspNetCore.Identity
-@inject SignInManager<OnlineEducationApplicationUser> SignInManager
-@inject UserManager<OnlineEducationApplicationUser> UserManager
+@inject SignInManager<InstructorUser> SignInManager
+@inject UserManager<InstructorUser> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
