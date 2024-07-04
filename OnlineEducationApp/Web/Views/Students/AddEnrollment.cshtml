@@ -28,15 +28,12 @@
                 <span asp-validation-for="DateOfCourseEnrollment" class="text-danger"></span>
             </div>
             <input type="hidden" asp-for="StudentId" />
-            <div class="form-group">
+            <div class="form-group mt-3">
                 <input type="submit" value="Add Enrollment" class="btn btn-primary" />
+                <a class="btn btn-dark" asp-action="Details" asp-route-id="@Model.StudentId">Back to Student</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a class="btn btn-info" asp-action="Details" asp-route-id="@Model.CourseId">Back to List</a>
 </div>
 
 @section Scripts {

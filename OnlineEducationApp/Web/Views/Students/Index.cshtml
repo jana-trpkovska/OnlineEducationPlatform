@@ -1,67 +1,33 @@
-﻿@model IEnumerable<Domain.DomainModels.Student>
+﻿@model List<Domain.DomainModels.Student>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1 class="text-center mb-4">Students</h1>
 
 <p>
-    <a class="btn btn-success" asp-action="Create">Create New</a>
+    <a class="btn btn-outline-success btn-lg form-control" asp-action="Create">Create New Student</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Index)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProfilePicture)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateEnrolled)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Index)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ProfilePicture)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DateEnrolled)
-                </td>
-                <td>
-                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+@for (int i= 0;i < Model.Count();i++)
+{
+    var student = Model[i];
+    if (i % 4 == 0)
+    {
+        @:<div class="row mb-5">
+    }
+    <div class="col-3">
+        <div class="card" style="width: 18rem; border:none;">
+            <img src="@student.ProfilePicture" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title">@student.FirstName @student.LastName</h5>
+                <p class="card-text">@student.Index</p>
+                <a asp-controller="Students" asp-action="Details" asp-route-id="@student.Id" class="btn btn-outline-dark form-control">Details</a>
+            </div>
+        </div>       
+    </div>
+    if(i%4==3){
+        @:</div>
+    }
+}

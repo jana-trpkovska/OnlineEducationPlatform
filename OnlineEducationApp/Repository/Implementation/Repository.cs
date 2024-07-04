@@ -39,6 +39,15 @@ namespace Repository.Implementation
                     .Include("Student")
                     .AsEnumerable();
             }
+            else if (typeof(T).IsAssignableFrom(typeof(CourseInstructor)))
+            {
+                return entities
+                    .Include("Course")
+                    .Include("Course.Enrollments")
+                    .Include("Course.Enrollments.Student")
+                    .Include("Instructor")
+                    .AsEnumerable();
+            }
             else if (typeof(T).IsAssignableFrom(typeof(Student)))
             {
                 return entities
@@ -69,12 +78,6 @@ namespace Repository.Implementation
                     .Include("Student")
                     .First(s => s.Id == id);
             }
-            //else if (typeof(T).IsAssignableFrom(typeof(Instructor)))
-            //{
-            //    return entities
-            //        .Include("CourseInstructors")
-            //        .First(s => s.Id == id);
-            //}
             else if (typeof(T).IsAssignableFrom(typeof(Student)))
             {
                 return entities

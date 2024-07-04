@@ -37,6 +37,12 @@ namespace Service.Implementation
                 _courseInstructorRepositorty.Delete(item);
         }
 
+        public void DeleteCourseInstructor(Guid? courseId)
+        {
+            var courseInstructor = _courseInstructorRepositorty.Get(courseId);
+            _courseInstructorRepositorty.Delete(courseInstructor);
+        }
+
         public List<CourseInstructor> GetAllCourseInstructors()
         {
             return _courseInstructorRepositorty.GetAll().ToList();

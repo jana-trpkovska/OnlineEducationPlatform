@@ -11,5 +11,6 @@ namespace Service.Interface
     {
         List<Enrollment> GetAllEnrollments();
         Enrollment GetDetailsForEnrollment(BaseEntity model);
+        void DeleteEnrolment(Enrollment e);
     }
 }

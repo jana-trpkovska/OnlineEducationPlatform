@@ -8,51 +8,27 @@
 <h1>Delete</h1>
 
 <h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Student</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Index)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Index)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ProfilePicture)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ProfilePicture)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DateEnrolled)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DateEnrolled)
-        </dd>
-    </dl>
-
-    <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a class="btn btn-info" asp-action="Index">Back to List</a>
-    </form>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+        <img style="height:200px;" src="@Model.ProfilePicture" />
+    </div>
+    <div class="col-3">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Model.Index</li>
+            <li class="list-group-item">@Model.FirstName @Model.LastName</li>
+            <li class="list-group-item">@Model.Email</li>
+            <li class="list-group-item">@Model.DateEnrolled</li>
+            <li class="list-group-item">
+                <form asp-action="Delete">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                    <a class="btn btn-dark" asp-action="Index">Back to List</a>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="col-3"></div>
 </div>
+
+    

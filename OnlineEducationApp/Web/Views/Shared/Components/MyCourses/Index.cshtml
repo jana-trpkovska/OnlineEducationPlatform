@@ -1,0 +1,8 @@
+﻿@model List<Domain.DomainModels.Course>
+
+<ul class="list-group list-group-flush">
+    @foreach(var course in Model)
+    {
+        <a class="list-group-item ps-4" asp-action="Details" asp-controller="Courses" asp-route-id="@course.Id">@course.Title</a>
+    }
+</ul>

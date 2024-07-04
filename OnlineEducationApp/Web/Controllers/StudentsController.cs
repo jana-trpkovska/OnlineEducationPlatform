@@ -18,11 +18,13 @@ namespace Web.Controllers
     {
         private readonly IStudentService studentService;
         private readonly ICourseService courseService;
+        private readonly IEnrollmentService enrollmentService;
 
-        public StudentsController(IStudentService studentService, ICourseService courseService)
+        public StudentsController(IStudentService studentService, ICourseService courseService, IEnrollmentService enrollmentService)
         {
             this.studentService = studentService;
             this.courseService = courseService;
+            this.enrollmentService = enrollmentService;
 
         }
 
@@ -33,6 +35,7 @@ namespace Web.Controllers
         }
 
         // GET: Students/Details/5
+        [Authorize]
         public IActionResult Details(Guid? id)
         {
             if (id == null)
@@ -51,6 +54,7 @@ namespace Web.Controllers
         }
 
         // GET: Students/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -130,6 +134,8 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(Guid id)
         {
+            var enrolments = enrollmentService.GetAllEnrollments().Where(x => x.StudentId == id);
+            enrolments.ToList().ForEach(x => enrollmentService.DeleteEnrolment(x));
             studentService.DeleteStudent(id);
             return RedirectToAction(nameof(Index));
         }

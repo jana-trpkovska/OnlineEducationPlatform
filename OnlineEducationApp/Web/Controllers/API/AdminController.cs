@@ -1,5 +1,6 @@
 ﻿using Domain.DomainModels;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Service.Interface;
 
@@ -41,6 +42,5 @@ namespace Web.Controllers.API
         {
             return studentService.GetStudentById(model.Id);
         }
-
     }
 }

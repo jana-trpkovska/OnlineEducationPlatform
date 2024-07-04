@@ -19,11 +19,13 @@ namespace Web.Controllers
     {
         private readonly ICourseService courseService;
         private readonly ICourseInstructorService courseInstructorService;
+        private readonly IEnrollmentService enrollmentService;
 
-        public CoursesController(ICourseService courseService, ICourseInstructorService courseInstructorService)
+        public CoursesController(ICourseService courseService, ICourseInstructorService courseInstructorService, IEnrollmentService enrollmentService)
         {
             this.courseService = courseService;
             this.courseInstructorService = courseInstructorService;
+            this.enrollmentService = enrollmentService;
         }
 
         // GET: Courses
@@ -137,6 +139,8 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(Guid id)
         {
+            enrollmentService.GetAllEnrollments().Where(x => x.CourseId == id).ToList().ForEach(x => enrollmentService.DeleteEnrolment(x));
+            courseInstructorService.GetAllCourseInstructors().Where(x => x.CourseId == id).ToList().ForEach(x => courseInstructorService.DeleteCourseInstructor(x.Id));
             courseService.DeleteCourse(id);
             return RedirectToAction(nameof(Index));
         }

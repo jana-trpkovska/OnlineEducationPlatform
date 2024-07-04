@@ -6,60 +6,56 @@
     int i = 0;
 }
 
-<h1>Details</h1>
-
-<div>
-    <h4>Course</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CourseImage)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CourseImage)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Duration)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Duration)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Level)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Level)
-        </dd>
-    </dl>
+<div class="d-flex flex-column justify-content-center align-items-center mb-4" style="background-position-y:-200px; background-image:url(@Model.CourseImage); height:600px; background-size:cover; background-repeat:no-repeat;">
+    <div style="font-size:100px;">@Model.Title</div>
+    <p style="font-size:larger;">@Model.Description</p>
+    <div style="margin-bottom:5px;">
+        <span style="padding:10px;">Duration: @Model.Duration</span>
+        <span style="padding:10px;">Level: @Model.Level</span>
+        <span style="padding:10px;">Number of students: @Model.Enrollments.Count()</span>
+    </div>
+    <div>
+        <a style="margin:10px;" asp-action="Index" class="btn btn-dark" >Back to List</a>
+        <a style="margin:10px;" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-dark">Edit</a>
+        <a style="margin:10px;" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-dark">Delete</a>
+    </div>
 </div>
 
 @if (ViewBag.AlreadyInstructing)
 {
     <div>
-        <span>Already instructing this course! Do you wan't to remove yourself?</span>
-        <a class="btn btn-success mb-2" asp-action="RemoveInstructor" asp-route-courseId="@Model.Id">Remove</a>
+        <h3 class="text-center">You are already instructing this course! Do you wan't to remove yourself?</h3>
+        <a class="btn btn-outline-danger form-control mb-2 ms-2" asp-action="RemoveInstructor" asp-route-courseId="@Model.Id">Remove</a>
     </div>
 }
 else
 {
     <div>
-        <a class="btn btn-success mb-2" asp-action="AddInstructor" asp-route-id="@Model.Id">Instruct this course</a>
+        <a style="font-size:larger;" class="btn btn-success form-control mb-2" asp-action="AddInstructor" asp-route-id="@Model.Id">Instruct this course</a>
     </div>
 }
 
-<div>
-    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a class="btn btn-info" asp-action="Index">Back to List</a>
-</div>
+<h1 class="text-center mt-5">Enrolled students</h1>
+
+@foreach (var enrollment in Model.Enrollments)
+{
+    var student = enrollment.Student;
+
+    if (i % 4 == 0)
+    {
+        @:<div class="row mb-5">
+    }
+    <div class="col-3">
+        <div class="card" style="width: 18rem; border:none;">
+            <img src="@student.ProfilePicture" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title">@student.FirstName @student.LastName</h5>
+                <p class="card-text">@student.Index</p>
+                <a asp-controller="Students" asp-action="Details" asp-route-id="@student.Id" class="btn btn-outline-dark form-control">Details</a>
+            </div>
+        </div>       
+    </div>
+    if(i%4==3){
+        @:</div>
+    }
+}

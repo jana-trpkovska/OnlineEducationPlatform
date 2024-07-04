@@ -18,6 +18,11 @@ namespace Service.Implementation
             this.enrollmentRepository = enrollmentRepository;
         }
 
+        public void DeleteEnrolment(Enrollment e)
+        {
+            enrollmentRepository.Delete(e);
+        }
+
         public List<Enrollment> GetAllEnrollments()
         {
             return enrollmentRepository.GetAll().ToList();
