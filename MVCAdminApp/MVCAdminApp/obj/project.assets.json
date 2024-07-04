@@ -40,6 +40,19 @@
           }
         }
       },
+      "ExcelDataReader/3.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/ExcelDataReader.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/ExcelDataReader.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
@@ -1679,6 +1692,28 @@
         "lib/netstandard1.3/DocumentFormat.OpenXml.xml",
         "lib/netstandard2.0/DocumentFormat.OpenXml.dll",
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
+      ]
+    },
+    "ExcelDataReader/3.7.0": {
+      "sha512": "AMv3oDETRHSRyXC17rBtKH45qIfFyo433LMeaMB3u4RNr/c9Luuc0Z+JMP6+3Cx9n4wXqFqcrEIVxrf/GgYnZg==",
+      "type": "package",
+      "path": "exceldatareader/3.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ExcelDataReader.png",
+        "README.md",
+        "exceldatareader.3.7.0.nupkg.sha512",
+        "exceldatareader.nuspec",
+        "lib/net462/ExcelDataReader.dll",
+        "lib/net462/ExcelDataReader.pdb",
+        "lib/net462/ExcelDataReader.xml",
+        "lib/netstandard2.0/ExcelDataReader.dll",
+        "lib/netstandard2.0/ExcelDataReader.pdb",
+        "lib/netstandard2.0/ExcelDataReader.xml",
+        "lib/netstandard2.1/ExcelDataReader.dll",
+        "lib/netstandard2.1/ExcelDataReader.pdb",
+        "lib/netstandard2.1/ExcelDataReader.xml"
       ]
     },
     "ExcelNumberFormat/1.1.0": {
@@ -5552,24 +5587,25 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ClosedXML >= 0.102.2",
+      "ExcelDataReader >= 3.7.0",
       "GemBox.Document >= 35.0.1784",
       "Microsoft.AspNet.WebApi.Client >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\": {}
+    "C:\\Users\\Dejan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
+      "projectUniqueName": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
       "projectName": "MVCAdminApp",
-      "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
-      "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\obj\\",
+      "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
+      "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5577,6 +5613,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5603,6 +5640,10 @@
           "ClosedXML": {
             "target": "Package",
             "version": "[0.102.2, )"
+          },
+          "ExcelDataReader": {
+            "target": "Package",
+            "version": "[3.7.0, )"
           },
           "GemBox.Document": {
             "target": "Package",
@@ -5632,7 +5673,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

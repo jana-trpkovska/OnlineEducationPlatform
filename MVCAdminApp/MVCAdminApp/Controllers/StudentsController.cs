@@ -1,4 +1,6 @@
 ﻿using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Spreadsheet;
+using ExcelDataReader;
 using GemBox.Document;
 using Microsoft.AspNetCore.Mvc;
 using MVCAdminApp.Models;
@@ -122,6 +124,64 @@ namespace MVCAdminApp.Controllers
                     return File(content, contentType, fileName);
                 }
             }
+
+        }
+
+        public IActionResult ImportAllStudents()
+        {
+            return View();
+        }
+
+        public IActionResult ImportStudent(IFormFile file)
+        {
+            string pathToUpload = $"{Directory.GetCurrentDirectory()}\\files\\{file.FileName}";
+
+            using (FileStream fileStream = System.IO.File.Create(pathToUpload))
+            {
+                file.CopyTo(fileStream);
+                fileStream.Flush();
+            }
+
+            List<Student> students = getAllStudentsFromFile(file.FileName);
+            HttpClient client = new HttpClient();
+            string URL = "http://localhost:5291/api/Admin/ImportAllStudents";
+
+            HttpContent content = new StringContent(JsonConvert.SerializeObject(students), Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = client.PostAsync(URL, content).Result;
+
+            var result = response.Content.ReadAsAsync<bool>().Result;
+
+            return RedirectToAction("Index");
+        }
+
+        private List<Student> getAllStudentsFromFile(string fileName)
+        {
+            List<Student> students = new List<Student>();
+            string filePath = $"{Directory.GetCurrentDirectory()}\\files\\{fileName}";
+
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
+            using (var stream = System.IO.File.Open(filePath, FileMode.Open, FileAccess.Read))
+            {
+                using (var reader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    while (reader.Read())
+                    {
+                        students.Add(new Models.Student
+                        {
+                            Index = reader.GetValue(0).ToString(),
+                            FirstName = reader.GetValue(1).ToString(),
+                            LastName = reader.GetValue(2).ToString(),
+                            Email = reader.GetValue(3).ToString(),
+                            ProfilePicture = reader.GetValue(4).ToString(),
+                            DateEnrolled = DateTime.Parse(reader.GetValue(5).ToString())
+                        });
+                    }
+
+                }
+            }
+            return students;
 
         }
     }
