@@ -96,7 +96,7 @@ namespace Web.Controllers.API
                         Description = item.Description,
                         CourseImage = item.CourseImage,
                         Level = item.Level,
-
+                        Duration = item.Duration,
                     };
 
                     courseService.CreateNewCourse(course);

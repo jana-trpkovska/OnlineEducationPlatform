@@ -5,44 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E71AAFF8-383D-44EF-937B-BD93871B40B0}|Domain\\Domain.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\domain\\domainmodels\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E71AAFF8-383D-44EF-937B-BD93871B40B0}|Domain\\Domain.csproj|solutionrelative:domain\\domainmodels\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E71AAFF8-383D-44EF-937B-BD93871B40B0}|Domain\\Domain.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\domain\\domainmodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E71AAFF8-383D-44EF-937B-BD93871B40B0}|Domain\\Domain.csproj|solutionrelative:domain\\domainmodels\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\web\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\web\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\web\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\web\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\web\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.Enrollments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.CourseInstructors.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC9DC374-777A-46DB-A786-90B4F4FB054A}|Service\\Service.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\service\\interface\\icourseinstructorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC9DC374-777A-46DB-A786-90B4F4FB054A}|Service\\Service.csproj|solutionrelative:service\\interface\\icourseinstructorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -76,132 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\DomainModels\\Course.cs",
-              "RelativeDocumentMoniker": "Domain\\DomainModels\\Course.cs",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\DomainModels\\Course.cs",
-              "RelativeToolTip": "Domain\\DomainModels\\Course.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T18:51:15.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\DomainModels\\Student.cs",
-              "RelativeDocumentMoniker": "Domain\\DomainModels\\Student.cs",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Domain\\DomainModels\\Student.cs",
-              "RelativeToolTip": "Domain\\DomainModels\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T18:51:01.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\API\\AdminController.cs",
               "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
               "RelativeToolTip": "Web\\Controllers\\API\\AdminController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAuwC4AAAAlAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T18:40:48.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Courses\\Index.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Courses\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Courses\\Index.cshtml",
-              "RelativeToolTip": "Web\\Views\\Courses\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-04T18:39:27.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Students\\Create.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Students\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Students\\Create.cshtml",
-              "RelativeToolTip": "Web\\Views\\Students\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-04T18:39:22.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Courses\\Create.cshtml",
-              "RelativeDocumentMoniker": "Web\\Views\\Courses\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Views\\Courses\\Create.cshtml",
-              "RelativeToolTip": "Web\\Views\\Courses\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-04T18:39:09.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "Web\\Controllers\\StudentsController.cs",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "Web\\Controllers\\StudentsController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwDgAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T18:37:24.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ICourseInstructorService.cs",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Interface\\ICourseInstructorService.cs",
-              "RelativeDocumentMoniker": "Service\\Interface\\ICourseInstructorService.cs",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Service\\Interface\\ICourseInstructorService.cs",
-              "RelativeToolTip": "Service\\Interface\\ICourseInstructorService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T18:35:39.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "dbo.CourseInstructors [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.CourseInstructors.sql",
-              "ToolTip": "dbo.CourseInstructors [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-04T18:32:20.255Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dbo.Enrollments [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.Enrollments.sql",
-              "ToolTip": "dbo.Enrollments [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-07-04T18:32:16.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "Web\\Controllers\\CoursesController.cs",
-              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "Web\\Controllers\\CoursesController.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAAwI0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T18:28:12.258Z",
               "EditorCaption": ""
             }
           ]

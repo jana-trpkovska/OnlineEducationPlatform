@@ -25,7 +25,7 @@ namespace MVCAdminApp.Controllers
 
             List<Course> courses = getAllCoursesFromFile(file.FileName);
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5291/api/Admin/ImportAllCourses";
+            string URL = "https://onlineeducationapp.azurewebsites.net/api/Admin/ImportAllCourses";
 
             HttpContent content = new StringContent(JsonConvert.SerializeObject(courses), Encoding.UTF8, "application/json");
 
@@ -53,8 +53,8 @@ namespace MVCAdminApp.Controllers
                         {
                             Title = reader.GetValue(0).ToString(),
                             Description = reader.GetValue(1).ToString(),
-                            Duration = Int32.Parse(reader.GetValue(2).ToString()),
-                            Level = Int32.Parse(reader.GetValue(3).ToString()),
+                            Level = Int32.Parse(reader.GetValue(2).ToString()),
+                            Duration = Int32.Parse(reader.GetValue(3).ToString()),
                             CourseImage = reader.GetValue(4).ToString()
                         });
                     }

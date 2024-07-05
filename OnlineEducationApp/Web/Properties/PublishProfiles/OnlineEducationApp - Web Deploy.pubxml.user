@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxIlKQWnoHUaXvT7gomVHCQAAAAACAAAAAAAQZgAAAAEAACAAAADlo1wQ1I8hPwD1AbbcgzG0Mo22aH8ZYpn895jSno+JQgAAAAAOgAAAAAIAACAAAAAsRTpeoIHSmB6KwgjNj7vn8frDvTtsy+cIufQ887D/ZYAAAAAg7MzxmPq6ey50+CrjL15K1Be2oELFJYJhQehGx4D576sWQzWMlXWwg4ntdNWIYkuAwROxFMAPHGXj7y3zOhlJEQ7BipnE0PGtLS9OTgkhHuSxFVpDnH7odgjIlI+z3yJww8klTstcXLbGfys6QShqcMqTUmurH9gTOI8bOvnJ6UAAAABbJRgbORLxKu33lari+8sSoy9Z+b6rbNtq99cq6Bae0H+WOTT1bpukSctCE5hzEFYKA6pnQynguMcokPX15rOU</EncryptedPassword>
+    <History>True|2024-07-05T07:22:42.8336673Z||;True|2024-07-05T00:04:51.1590938+02:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ApplicationDbContextConnection">
+      <Value>Data Source=onlineeducationappdbserver.database.windows.net,1433%3bInitial Catalog=OnlineEducationAppDb%3bUser ID=isadmin%3bPassword=Test!123</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=onlineeducationappdbserver.database.windows.net,1433%3bInitial Catalog=OnlineEducationAppDb%3bUser ID=isadmin%3bPassword=Test!123</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Repository.ApplicationDbContext">
+      <Value>Data Source=onlineeducationappdbserver.database.windows.net,1433%3bInitial Catalog=OnlineEducationAppDb%3bUser ID=isadmin%3bPassword=Test!123</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -20,7 +20,7 @@ namespace MVCAdminApp.Controllers
         public IActionResult Index()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5291/api/Admin/GetAllStudents";
+            string URL = "https://onlineeducationapp.azurewebsites.net/api/Admin/GetAllStudents";
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
             var data = response.Content.ReadAsAsync<List<Student>>().Result;
@@ -30,7 +30,7 @@ namespace MVCAdminApp.Controllers
         public IActionResult Details(Guid Id)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5291/api/Admin/GetDetailsForStudent";
+            string URL = "https://onlineeducationapp.azurewebsites.net/api/Admin/GetDetailsForStudent";
             var model = new
             {
                 Id = Id
@@ -46,7 +46,7 @@ namespace MVCAdminApp.Controllers
         public FileContentResult CreateInvoice(Guid Id)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5291/api/Admin/GetDetailsForStudent";
+            string URL = "https://onlineeducationapp.azurewebsites.net/api/Admin/GetDetailsForStudent";
             var model = new
             {
                 Id = Id
@@ -95,7 +95,7 @@ namespace MVCAdminApp.Controllers
                 worksheet.Cell(1, 5).Value = "Date Enrolled";
 
                 HttpClient client = new HttpClient();
-                string URL = "http://localhost:5291/api/Admin/GetAllStudents";
+                string URL = "https://onlineeducationapp.azurewebsites.net/api/Admin/GetAllStudents";
                 HttpResponseMessage response = client.GetAsync(URL).Result;
 
                 var data = response.Content.ReadAsAsync<List<Student>>().Result;
@@ -144,7 +144,7 @@ namespace MVCAdminApp.Controllers
 
             List<Student> students = getAllStudentsFromFile(file.FileName);
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5291/api/Admin/ImportAllStudents";
+            string URL = "https://onlineeducationapp.azurewebsites.net/api/Admin/ImportAllStudents";
 
             HttpContent content = new StringContent(JsonConvert.SerializeObject(students), Encoding.UTF8, "application/json");
 

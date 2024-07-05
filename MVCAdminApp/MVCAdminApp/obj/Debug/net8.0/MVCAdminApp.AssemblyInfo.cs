@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MVCAdminApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e566cc1bf78e1ad0da3ce71ae69f314974872f59")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac8db5c037bfacd425aff7e5b4564d46b478b68c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MVCAdminApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MVCAdminApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
