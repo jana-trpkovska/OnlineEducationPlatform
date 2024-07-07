@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {}
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {
+    "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
+        "projectUniqueName": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
         "projectName": "MVCAdminApp",
-        "projectPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
-        "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\obj\\",
+        "projectPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\MVCAdminApp.csproj",
+        "packagesPath": "C:\\Users\\Jana Trpkovska\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jana Trpkovska\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

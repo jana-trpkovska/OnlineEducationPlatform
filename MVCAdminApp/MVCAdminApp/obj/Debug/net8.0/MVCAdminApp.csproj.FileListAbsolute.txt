@@ -163,3 +163,4 @@ C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp\
 C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp\obj\Debug\net8.0\MVCAdminApp.genruntimeconfig.cache
 C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp\obj\Debug\net8.0\ref\MVCAdminApp.dll
 C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp\bin\Debug\net8.0\ExcelDataReader.dll
+C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp\bin\Debug\net8.0\ExcelDataReader.dll
