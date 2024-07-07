@@ -17,123 +17,123 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web
 build_property.RootNamespace = Web
-build_property.ProjectDir = C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web\
+build_property.ProjectDir = C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\OnlineEducationApp\Web
+build_property.MSBuildProjectDirectory = C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\OnlineEducationApp\Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Create.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Delete.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Details.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Edit.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Courses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Home/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Home/Privacy.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/Components/MyCourses/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/Components/MyCourses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTXlDb3Vyc2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/Components/MyStudents/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/Components/MyStudents/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTXlTdHVkZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/Error.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/AddEnrollment.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/AddEnrollment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQWRkRW5yb2xsbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Create.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Delete.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Details.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Edit.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/EnrollmentAlreadyAdded.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/EnrollmentAlreadyAdded.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRW5yb2xsbWVudEFscmVhZHlBZGRlZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/_ViewImports.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/_ViewStart.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/_Layout.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/OnlineEducationApp/Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lzldzk1rll

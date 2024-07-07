@@ -19,17 +19,17 @@ namespace MVCAdminApp.Controllers
         public IActionResult Index()
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5005/api/Admin/GetAllActiveOrders";
+            string URL = "https://bookstoreweb20240707160345.azurewebsites.net/api/Admin/GetAllBooks";
             HttpResponseMessage response = client.GetAsync(URL).Result;
 
-            var data = response.Content.ReadAsAsync<List<Order>>().Result;
+            var data = response.Content.ReadAsAsync<List<Books>>().Result;
             return View(data);
         }
 
         public IActionResult Details(Guid Id)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5005/api/Admin/GetDetailsForOrder";
+            string URL = "https://bookstoreweb20240707160345.azurewebsites.net/api/Admin/GetBooksDetails";
             var model = new
             {
                 Id = Id
@@ -38,14 +38,14 @@ namespace MVCAdminApp.Controllers
 
             HttpResponseMessage response = client.PostAsync(URL, content).Result;
 
-            var data = response.Content.ReadAsAsync<Order>().Result;
+            var data = response.Content.ReadAsAsync<Books>().Result;
             return View(data);
         }
 
-        public FileContentResult CreateInvoice(Guid Id)
+        public FileContentResult PrintBookDetails(Guid Id)
         {
             HttpClient client = new HttpClient();
-            string URL = "http://localhost:5005/api/Admin/GetDetailsForOrder";
+            string URL = "https://bookstoreweb20240707160345.azurewebsites.net/api/Admin/GetBooksDetails";
             var model = new
             {
                 Id = Id
@@ -54,60 +54,46 @@ namespace MVCAdminApp.Controllers
 
             HttpResponseMessage response = client.PostAsync(URL, content).Result;
 
-            var data = response.Content.ReadAsAsync<Order>().Result;
+            var data = response.Content.ReadAsAsync<Books>().Result;
 
             var templatePath = Path.Combine(Directory.GetCurrentDirectory(), "PartneringInvoice.docx");
             var document = DocumentModel.Load(templatePath);
-            document.Content.Replace("{{OrderNumber}}", data.Id.ToString());
-            document.Content.Replace("{{UserName}}", data.User.Email);
-
-            StringBuilder sb = new StringBuilder();
-            var total = 0.0;
-            foreach (var item in data.bookInOrders)
-            {
-                sb.AppendLine("Book " + item.Book.Title + " has quantity " + item.Quantity + " with price " + item.Book.Price);
-                total += item.Quantity * item.Book.Price;
-            }
-            document.Content.Replace("{{ProductList}}", sb.ToString());
-
-            document.Content.Replace("{{TotalPrice}}", total.ToString() + "$");
+            document.Content.Replace("{{BookTitle}}", data.Title.ToString());
+            document.Content.Replace("{{BookPrice}}", data.Price.ToString());
+            document.Content.Replace("{{ReleaseDate}}", data.ReleaseDate.ToString());
+            document.Content.Replace("{{Author}}", data.Author.FirstName.ToString() + " " + data.Author.LastName);
 
             var stream = new MemoryStream();
             document.Save(stream, new PdfSaveOptions());
-            return File(stream.ToArray(), new PdfSaveOptions().ContentType, "ExportedInvoice.pdf");
+            return File(stream.ToArray(), new PdfSaveOptions().ContentType, "BookDetails.pdf");
 
         }
 
-        public IActionResult ExportAllOrders()
+        public IActionResult ExportAllBooks()
         {
-            string fileName = "AllOrders.xlsx";
+            string fileName = "AllBooks.xlsx";
             string contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 
             using (var workbook = new XLWorkbook())
             {
-                IXLWorksheet worksheet = workbook.Worksheets.Add("All Orders");
-                worksheet.Cell(1, 1).Value = "OrderID";
-                worksheet.Cell(1, 2).Value = "Customer UserName";
-                worksheet.Cell(1, 3).Value = "Total Price";
+                IXLWorksheet worksheet = workbook.Worksheets.Add("All Books");
+                worksheet.Cell(1, 1).Value = "Title";
+                worksheet.Cell(1, 2).Value = "Price";
+                worksheet.Cell(1, 3).Value = "Release date";
+                worksheet.Cell(1, 4).Value = "Author";
                 HttpClient client = new HttpClient();
-                string URL = "http://localhost:5005/api/Admin/GetAllActiveOrders";
+                string URL = "https://bookstoreweb20240707160345.azurewebsites.net/api/Admin/GetAllBooks";
 
                 HttpResponseMessage response = client.GetAsync(URL).Result;
-                var data = response.Content.ReadAsAsync<List<Order>>().Result;
+                var data = response.Content.ReadAsAsync<List<Books>>().Result;
 
                 for (int i = 0; i < data.Count(); i++)
                 {
                     var item = data[i];
-                    worksheet.Cell(i + 2, 1).Value = item.Id.ToString();
-                    worksheet.Cell(i + 2, 2).Value = item.User.Email;
-                    var total = 0.0;
-                    for (int j = 0; j < item.bookInOrders.Count(); j++)
-                    {
-                        worksheet.Cell(1, 4 + j).Value = "Book - " + (j + 1);
-                        worksheet.Cell(i + 2, 4 + j).Value = item.bookInOrders.ElementAt(j).Book.Title;
-                        total += (item.bookInOrders.ElementAt(j).Quantity * item.bookInOrders.ElementAt(j).Book.Price);
-                    }
-                    worksheet.Cell(i + 2, 3).Value = total;
+                    worksheet.Cell(i + 2, 1).Value = item.Title.ToString();
+                    worksheet.Cell(i + 2, 2).Value = item.Price.ToString();
+                    worksheet.Cell(i + 2, 3).Value = item.ReleaseDate.ToString();
+                    worksheet.Cell(i + 2, 4).Value = item.Author.FirstName.ToString() + " " + item.Author.LastName;
                 }
                 using (var stream = new MemoryStream())
                 {

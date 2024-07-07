@@ -6,49 +6,29 @@
 
 @model List<MVCAdminApp.Models.Student>
 
-<div class="container">
-    <div class="row">
-        <a asp-action="ExportStudents" class="btn btn-danger">Export All Students</a>
+<h1 class="text-center mb-4">Students</h1>
 
+<a asp-action="ExportStudents" class="btn btn-success form-control mb-3">Export All Students</a>
+
+@for (int i= 0;i < Model.Count();i++)
+{
+    var student = Model[i];
+    if (i % 4 == 0)
+    {
+        @:<div class="row mb-5">
+    }
+    <div class="col-3">
+        <div class="card" style="width: 18rem; border:none;">
+            <img src="@student.ProfilePicture" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title">@student.FirstName @student.LastName</h5>
+                <p class="card-text">@student.Index</p>
+                <a asp-controller="Students" asp-action="Details" asp-route-id="@student.Id" class="btn btn-outline-dark form-control">Details</a>
+                <a asp-action="CreateInvoice" asp-route-Id="@student.Id" class="btn btn-outline-dark form-control mt-2">Create Invoice</a>
+            </div>
+        </div>       
     </div>
-
-    <div class="row m-4">
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Student name</th>
-                    <th scope="col">Number of courses</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model.Count == 0)
-                {
-                    <tr>
-                        <td colspan="5">No active enrollments</td>
-                    </tr>
-                }
-                else
-                {
-                    @for (int i = 0; i < Model.Count; i++)
-                    {
-                        var item = Model[i];
-
-                        <tr>
-                            <th scope="row">@(i + 1)</th>
-                            <td>@item.FirstName @item.LastName</td>
-                            <td>@item.Enrollments.Count</td>
-                            <td><a asp-action="Details" asp-route-Id="@item.Id" class="btn btn-info">Details</a></td>
-                            <td><a asp-action="CreateInvoice" asp-route-Id="@item.Id" class="btn btn-warning">Create Invoice</a></td>
-                        </tr>
-
-                    }
-                }
-            </tbody>
-
-        </table>
-    </div>
-
-</div>
+    if(i%4==3){
+        @:</div>
+    }
+}

@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\MVCAdminApp\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\mvcadminapp\\mvcadminapp\\views\\partneringapporders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|solutionrelative:mvcadminapp\\views\\partneringapporders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\mvcadminapp\\mvcadminapp\\views\\partneringapp\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E7266E43-A7D2-40FD-A760-83C7CF4A3C5D}|MVCAdminApp\\MVCAdminApp.csproj|solutionrelative:mvcadminapp\\views\\partneringapp\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +39,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\Views\\PartneringApp\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCAdminApp\\Views\\PartneringApp\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\Views\\PartneringApp\\Details.cshtml",
+              "RelativeToolTip": "MVCAdminApp\\Views\\PartneringApp\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T16:23:31.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\Views\\PartneringAppOrders\\Details.cshtml",
+              "RelativeDocumentMoniker": "MVCAdminApp\\Views\\PartneringAppOrders\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\MVCAdminApp\\MVCAdminApp\\Views\\PartneringAppOrders\\Details.cshtml",
+              "RelativeToolTip": "MVCAdminApp\\Views\\PartneringAppOrders\\Details.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-07T16:07:59.053Z",
+              "EditorCaption": ""
             }
           ]
         },

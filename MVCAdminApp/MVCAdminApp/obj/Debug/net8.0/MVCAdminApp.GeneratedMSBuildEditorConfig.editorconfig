@@ -9,63 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVCAdminApp
 build_property.RootNamespace = MVCAdminApp
-build_property.ProjectDir = C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp\
+build_property.ProjectDir = C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Jana Trpkovska\Desktop\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp
+build_property.MSBuildProjectDirectory = C:\Users\Dejan\Documents\GitHub\OnlineEducationPlatform\MVCAdminApp\MVCAdminApp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Courses/ImportAllCourses.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Courses/ImportAllCourses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbXBvcnRBbGxDb3Vyc2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Home/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Home/Privacy.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/PartneringApp/Details.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/PartneringAppOrders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lcmluZ0FwcE9yZGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/PartneringAppOrders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lcmluZ0FwcE9yZGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/PartneringApp/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lcmluZ0FwcFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/PartneringApp/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/PartneringApp/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydG5lcmluZ0FwcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Shared/Error.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Students/Details.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Students/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Students/ImportAllStudents.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Students/ImportAllStudents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW1wb3J0QWxsU3R1ZGVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Students/Index.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/_ViewImports.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/_ViewStart.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jana Trpkovska/Desktop/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Shared/_Layout.cshtml]
+[C:/Users/Dejan/Documents/GitHub/OnlineEducationPlatform/MVCAdminApp/MVCAdminApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bo44lgmage

@@ -1,9 +1,15 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\jana trpkovska\\desktop\\onlineeducationplatform\\onlineeducationapp\\web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.Enrollments.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.Courses.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|c:\\users\\dejan\\documents\\github\\onlineeducationplatform\\onlineeducationapp\\web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E013F9D-AE34-4611-8849-B1BB2402FBEC}|Web\\Web.csproj|solutionrelative:web\\controllers\\api\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -39,10 +45,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "dbo.Enrollments [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.Enrollments.sql",
+              "ToolTip": "dbo.Enrollments [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-07T14:33:41.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dbo.Courses [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/OnlineEducationDB/True/SqlTable/dbo.Courses.sql",
+              "ToolTip": "dbo.Courses [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-07-07T14:31:19.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
               "RelativeDocumentMoniker": "Web\\Controllers\\API\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Jana Trpkovska\\Desktop\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Dejan\\Documents\\GitHub\\OnlineEducationPlatform\\OnlineEducationApp\\Web\\Controllers\\API\\AdminController.cs",
               "RelativeToolTip": "Web\\Controllers\\API\\AdminController.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

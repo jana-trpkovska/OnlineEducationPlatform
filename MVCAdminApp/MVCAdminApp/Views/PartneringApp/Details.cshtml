@@ -6,38 +6,23 @@
 @{
 }
 
-@model MVCAdminApp.Models.PartneringAppModels.Order
+@model MVCAdminApp.Models.PartneringAppModels.Books
 
+<h1>Details for @Model.Title</h1>
 
-<h1>Details</h1>
-
-<div class="container">
-    <div>
-        <h3>Order for @Model.User.Email</h3>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+        <img style="height:200px;" src="@Model.BookImage" />
     </div>
-
-    @for(int i=0;i<Model.bookInOrders.Count(); i++)
-    {
-        var item = Model.bookInOrders.ElementAt(i).Book;
-        if(i % 3 == 0)
-        {
-            @:<div class="row">
-        }
-        <div class="col-3 m-4">
-
-            <div class="card" style="width: 18rem; height: 35rem">
-                <img class="card-img-top" src="@item.BookImage" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">@item.Title</h5>
-                    <h6>Price: @item.Price</h6>
-                </div>
-
-            </div>
-        </div>
-
-        if(i % 3 == 2)
-        {
-            @:</div>
-        }
-    }
+    <div class="col-3">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Title: @Model.Title</li>
+            <li class="list-group-item">Author: @Model.Author.FirstName @Model.Author.LastName</li>
+            <li class="list-group-item">Publisher: @Model.Publisher.Name</li>
+            <li class="list-group-item">Release date:@Model.ReleaseDate</li>
+        </ul>
+    </div>
+    <div class="col-3"></div>
+    <a class="btn btn-outline-dark form-control mt-3" asp-action="Index">Back to list</a>
 </div>

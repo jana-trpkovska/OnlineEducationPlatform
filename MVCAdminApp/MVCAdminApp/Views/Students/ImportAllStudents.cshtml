@@ -4,9 +4,11 @@
 @{
 }
 
+<h3>Import Students</h3>
+
 <form asp-controller="Students" asp-action="ImportStudent" method="post" enctype="multipart/form-data">
-    <div class="form-group">
+    <div class="form-group mt-2">
         <input type="file" name="file" class="form-control" />
     </div>
-    <button type="submit" class="btn btn-success">Import Excel</button>
+    <button type="submit" class="btn btn-success mt-2">Import Excel</button>
 </form>

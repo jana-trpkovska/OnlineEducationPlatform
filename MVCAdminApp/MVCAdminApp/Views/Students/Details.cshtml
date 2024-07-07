@@ -1,77 +1,53 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
-    int i = 0;
-}
 
 @model MVCAdminApp.Models.Student
 
 
-<h1>Details</h1>
+<h1>Details for @Model.FirstName</h1>
 
-<div>
-    <h4>Student</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FirstName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DateEnrolled)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DateEnrolled)
-        </dd>
-    </dl>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+        <img style="height:200px;" src="@Model.ProfilePicture"/>
+    </div>
+    <div class="col-3">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">@Model.Index</li>
+            <li class="list-group-item">@Model.FirstName @Model.LastName</li>
+            <li class="list-group-item">@Model.Email</li>
+            <li class="list-group-item">@Model.DateEnrolled</li>
+        </ul>
+    </div>
+    <div class="col-3"></div>
 </div>
 
 <div>
     <h5>All Courses for Student @Model.FirstName @Model.LastName</h5>
 </div>
 
-<div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Duration</th>
-                <th>Level</th>
-                <th>Date of enrollment</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Enrollments)
-            {
-                <tr>
-                    <td>@(i + 1)</td>
-                    <td>@item.Course.Title</td>
-                    <td>@item.Course.Description</td>
-                    <td>@item.Course.Duration</td>
-                    <td>@item.Course.Level</td>
-                    <td>@item.DateOfCourseEnrollment</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
-<div>
-    <a class="btn btn-info" asp-action="Index">Back to List</a>
-</div>
+@for (int i = 0; i < Model.Enrollments.Count(); i++)
+{
+    var item = Model.Enrollments.ElementAt(i).Course;
+    if (i % 4 == 0)
+    {
+        @:<div class="row mb-5">
+    }
+    <div class="col-3">
+        <div class="card" style="width: 18rem;">
+            <img src="@item.CourseImage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@item.Title</h5>
+                <p class="card-text">@item.Description</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Duration: @item.Duration min</li>
+                <li class="list-group-item">Level: @item.Level</li>
+            </ul>
+        </div>        
+    </div>
+    if(i%4==3){
+        @:</div>
+    }
+}

@@ -5,51 +5,37 @@
 }
 
 
-@model List<MVCAdminApp.Models.PartneringAppModels.Order>
+@model List<MVCAdminApp.Models.PartneringAppModels.Books>
 
 <div class="container">
+    <h1 class="text-center mb-4">Book Store</h1>
     <div class="row">
-        <a asp-action="ExportAllOrders" class="btn btn-danger">Export All Orders</a>
-
+        <a asp-action="ExportAllBooks" class="btn btn-success form-control mb-3">Export All Books</a>
     </div>
 
-    <div class="row m-4">
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">User</th>
-                    <th scope="col">Number of books</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model.Count == 0)
-                {
-                    <tr>
-                        <td colspan="5">No active orders</td>
-                    </tr>
-                }
-                else
-                {
-                    @for (int i = 0; i < Model.Count; i++)
-                    {
-                        var item = Model[i];
-
-                        <tr>
-                            <th scope="row">@(i + 1)</th>
-                            <td>@item.User.FirstName @item.User.LastName</td>
-                            <td>@item.bookInOrders.Count</td>
-                            <td><a asp-action="Details" asp-route-Id="@item.Id" class="btn btn-info">Details</a></td>
-                            <td><a asp-action="CreateInvoice" asp-route-Id="@item.Id" class="btn btn-warning">Create Invoice</a></td>
-                        </tr>
-
-                    }
-                }
-            </tbody>
-
-        </table>
+    @for (int i= 0;i < Model.Count();i++)
+{
+    var book = Model[i];
+    if (i % 4 == 0)
+    {
+        @:<div class="row mb-5">
+    }
+    <div class="col-3">
+        <div class="card" style="width: 18rem; border:none;">
+            <img src="@book.BookImage" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+                <h5 class="card-title">@book.Title</h5>
+                <p class="card-text">@book.Author.FirstName @book.Author.LastName</p>
+                <p class="card-text">Published by: @book.Publisher.Name</p>
+                <p class="card-text">Released on: @book.ReleaseDate</p>
+                <a asp-controller="PartneringApp" asp-action="Details" asp-route-id="@book.Id" class="btn btn-outline-dark form-control">Details</a>
+                <a asp-controller="PartneringApp" asp-action="PrintBookDetails" asp-route-Id="@book.Id" class="btn btn-outline-dark form-control mt-2">Print Detials</a>
+            </div>
+        </div>       
     </div>
+    if(i%4==3){
+        @:</div>
+    }
+}
 
 </div>
